@@ -2,7 +2,8 @@ class Api::CampsController < ApplicationController
 
   def index
     @camps = Camp.all
-    render "index.json.jbuider"
+    @camps = @camps.order('start_date ASC')
+    render "index.json.jbuilder"
     
   end
 
@@ -28,10 +29,10 @@ class Api::CampsController < ApplicationController
       overnight: params[:overnight]
       )
 
-      if @performance.save
+      if @camp.save
         render "show.json.jbuilder"
       else
-        render json: {errors: @performance.errors.full_message}, status: :unprocessable_entity
+        render json: {errors: @camp.errors.full_message}, status: :unprocessable_entity
       end
   end
 
