@@ -1,0 +1,1 @@
+json.array! @camps, partial: 'camp', as: :camp

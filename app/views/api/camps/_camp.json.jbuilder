@@ -1,0 +1,13 @@
+json.id camp.id
+json.name camp.name
+json.grade_start camp.grade_start
+json.grade_end camp.grade_end
+json.start_date camp.start_date
+json.end_date camp.end_date
+json.time_span camp.time_span
+json.cost camp.cost
+json.location camp.location
+json.description camp.description
+json.website camp.website
+json.image_url camp.image_url
+json.overnight camp.overnight
