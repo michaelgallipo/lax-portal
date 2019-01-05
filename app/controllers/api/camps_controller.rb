@@ -1,7 +1,9 @@
 class Api::CampsController < ApplicationController
 
   def index
+    date = Date.today
     @camps = Camp.all
+    # @camps = Camp.where('start_date >= ?', date)
     @camps = @camps.order('start_date ASC')
     render "index.json.jbuilder"
     

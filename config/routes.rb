@@ -9,6 +9,10 @@ Rails.application.routes.draw do
     post "camps" => "camps#create"
     patch "camps/:id" => "camps#update"
 
+    get "clinics" => "clinics#index"
+    get "clinics/:id" => "clinics#show"
+    post "clinics" => "clinics#create"
+
   end
 
 

@@ -1,0 +1,1 @@
+json.array! @clinics, partial: 'clinic', as: :clinic

@@ -8,6 +8,7 @@ json.time_span camp.time_span
 json.cost camp.cost
 json.location camp.location
 json.description camp.description
+json.type camp.type
 json.website camp.website
 json.image_url camp.image_url
-json.overnight camp.overnight
+json.no_sessions camp.no_sessions
